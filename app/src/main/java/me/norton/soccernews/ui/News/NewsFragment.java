@@ -1,22 +1,16 @@
 package me.norton.soccernews.ui.News;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.loader.content.AsyncTaskLoader;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.room.Room;
 
 import me.norton.soccernews.MainActivity;
-import me.norton.soccernews.data.local.AppDatabase;
 import me.norton.soccernews.databinding.FragmentNewsBinding;
 import me.norton.soccernews.ui.adapters.NewsAdapter;
 
