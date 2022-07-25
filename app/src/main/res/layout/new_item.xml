@@ -53,7 +53,7 @@
             tools:text="As meninas da Ferrorviária derrotaram o Palmeiras no último domingo" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btOpenLink"
             style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
