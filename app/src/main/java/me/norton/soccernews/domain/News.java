@@ -1,6 +1,32 @@
 package me.norton.soccernews.domain;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class News {
+
+    @PrimaryKey
+    public int uid;
+
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
+    }
+
+    private boolean favorite;
+
     private String title;
     private String description;
     private String image;
@@ -11,11 +37,6 @@ public class News {
         this.description = description;
         this.image = image;
         this.link = link;
-    }
-
-    public News(String title, String description) {
-        this.title = title;
-        this.description = description;
     }
 
     public String getImage() {
